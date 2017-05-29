@@ -1,0 +1,26 @@
+<div class="row">
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Usuário</th>
+            <th>E-mail</th>
+            <th>Opção</th>
+        </tr>
+        <tr ng-repeat="user in vm.allUsers">
+            <td>{{user.id}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td><a ng-click="vm.deleteUser(user.id)">Excluir</a></td>    
+        </tr>
+    </table>
+</div>
+<div class="row">
+    <div class="pull-right">
+        <a href="#!/login" class="btn btn-default">
+            <span class="glyphicon glyphicon-log-out"></span> Sair
+        </a>
+    </div>
+</div>
+
+    
+
